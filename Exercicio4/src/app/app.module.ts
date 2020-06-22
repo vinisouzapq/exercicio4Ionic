@@ -11,7 +11,12 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { AngularFireModule } from '@angular/fire';
 import { AngularFireAuthModule, AngularFireAuth } from '@angular/fire/auth';
+import { AngularFireDatabaseModule } from '@angular/fire/database';
+import { AngularFireStorageModule } from '@angular/fire/storage';
+
 import { IonicStorageModule } from '@ionic/storage';
+
+import { environment } from '../environments/environment';
 
 
 @NgModule({
@@ -21,7 +26,7 @@ import { IonicStorageModule } from '@ionic/storage';
     BrowserModule,
     IonicModule.forRoot(),
     AppRoutingModule,
-    AngularFireModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireAuthModule, 
     IonicStorageModule.forRoot({
           name: "__mydb",

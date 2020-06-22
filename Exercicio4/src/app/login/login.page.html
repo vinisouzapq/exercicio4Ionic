@@ -1,8 +1,6 @@
 <ion-header>
     <ion-toolbar>
-        <ion-buttons slot="start">
-            <ion-menu-button></ion-menu-button>
-        </ion-buttons>
+        
         <ion-title>Login</ion-title>
     </ion-toolbar>
 </ion-header>
@@ -14,17 +12,17 @@
             <ion-card-subtitle>Bem vindo ao aplicativo</ion-card-subtitle>
         </ion-card-header>
         <ion-card-content>
-            Entre com o seu usurio e senha abaixo ou registre-se na aplicacao.
+            Entre com o seu usurio e senha abaixo ou registre-se no aplicativo.
         </ion-card-content>
     </ion-card>
     <ion-list>
         <ion-item>
             <ion-label position="stacked">E-mail:<ion-text color="danger">*</ion-text></ion-label>
-            <!--<ion-input [(ngModel)]="user.email" placeholder="Digite aqui seu Usuário"></ion-input>-->
+            <!--<ion-input [(ngModel)]="userLogin.email" placeholder="Digite aqui seu Usuario"></ion-input>-->
         </ion-item>
         <ion-item>
             <ion-label position="stacked">Senha:<ion-text color="danger">*</ion-text></ion-label>
-            <!--<ion-input [(ngModel)]="user.senha" type="password" placeholder="Digite aqui sua Senha"></ion-input>-->
+            <!--<ion-input [(ngModel)]="userLogin.password" type="password" placeholder="Digite aqui sua Senha"></ion-input>-->
         </ion-item>
         <ion-item>
             <ion-button (click)="login()" color="secondary">Logar</ion-button>

@@ -18,11 +18,6 @@ export class AppComponent implements OnInit {
       icon: 'home'
     },
     {
-      title: 'Login',
-      url: '/login',
-      icon: 'person-add'
-    },
-    {
       title: 'Favorites',
       url: '/folder/Favorites',
       icon: 'heart'
